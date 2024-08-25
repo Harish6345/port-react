@@ -1,0 +1,89 @@
+.nav-bar{
+  max-height:100px;
+  width: 100%;
+  display:flex;
+  justify-content:space-between;
+  padding: 20px 10px;
+
+
+}
+.navbar-items *{
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+}
+.nav-bar a{
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+}
+p{
+  color: black !important;
+}
+.navbar-items ul li{
+  list-style: none;
+  padding: 10px;
+  color: black;
+  font-weight: bolder;
+  margin: 0px auto;
+  cursor: pointer;
+  position: relative;
+ 
+}
+
+.navbar-items ul li::before {
+  content: '';
+  position: absolute;
+  width: 0; /* Start with no width for the animation */
+  height: 3px;
+  background-color: tomato; /* Adjust color as needed */
+  left: 50%;
+  bottom: -3px;
+  transform: translateX(-50%);
+   /* Center the underline */
+  transition: width 0.3s ease-in-out; /* Smooth transition */
+}
+
+.navbar-items ul li:hover::before {
+  width: 100%; /* Expand the underline to the full width of the li on hover */
+}
+
+.navbar-items ul li::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  left: 0;
+  bottom: -3px;
+  background-color: transparent; /* Hidden by default */
+}
+
+
+
+.navbar-items {
+  max-width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  
+
+  
+  
+  
+}
+.navbar-items ul{
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+.nav-bar a{
+  
+  padding: 8px 20px;
+  background-color: tomato;
+  color: white;
+  border: 1px solid tomato;
+  text-decoration: none;
+  border-radius: 4px;
+}
+.fa-arrow-down{
+  color: white !important;
+  font-size: small !important;
+}
+

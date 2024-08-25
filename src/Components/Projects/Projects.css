@@ -1,0 +1,113 @@
+.projects{
+  min-height: 100vh;
+  padding: 0px calc(2vw + 2vw) !important;
+  font-family: 'poppins',sans-serif;
+}
+.projects h1,h4{
+  text-align: center;
+}
+.projects h4{
+ font-weight: 400;
+ max-width: 600px;
+ margin: 0px auto;
+ line-height: 25px;
+}
+.buttons-container{
+  display: flex;
+  max-width: 50%;
+  margin: 20px auto;
+  justify-content: space-around;
+}
+.buttons-container a{
+ text-decoration: none;
+ font-weight: 500;
+ color: inherit;
+ padding: 0.4rem 18px;
+
+
+}
+.buttons-container a:hover {
+  color: white;
+  padding: 0.4rem 18px;
+  background-color: tomato; /* Move background-color here */
+  border-radius: 6px;
+  transition:background-color 0.4s ease-in-out,padding 0.4s ease-in-out; /* Correct usage */
+}
+.flex-container{
+width: 90%;
+margin: 0 auto;
+min-height: 400px;
+display: flex;
+/* padding: 10px 10px; */
+justify-content: center;
+
+
+}
+.flex-box{
+  width: 28%;
+
+  margin: 10px 10px;
+  border-radius: 6px;
+  box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.1);
+  padding: 5px 10px;
+}
+.flex-box:hover{
+  transform: scale(0.9);
+  transition: 0.5s ease-in-out;
+}
+.flex-box img{
+  height:60%;
+  width: 100%;
+  border-radius: 8px;
+ 
+}
+.flex-box h4{
+  text-align: left;
+  font-weight: 700;
+}
+.flex-box p{
+  font-size: smaller;
+}
+.flex-box *{
+  padding: 5px 0px;
+}
+.flex-box span{
+  font-weight: 600;
+  border-bottom: 1px solid tomato;
+  font-size: small;
+  cursor: pointer;
+}
+.tilted-arrow {
+  transform: rotate(-45deg);
+  color: tomato;
+}
+.contact-form{
+  height: 500px;
+  width: 100%;
+  margin-top: 20vh;
+
+}
+.contact-form h1{
+  text-align: center;
+}
+
+
+.form-submit{
+  width: 50%;
+  margin:10vh  auto;
+  display: flex;
+  gap:10px;
+}
+.form-submit a{
+  padding: 12px 20px;
+  text-decoration: none;
+  color: white;
+  background-color: tomato;
+  border-radius: 6px;
+}
+.form-submit input{
+  outline: none;
+  border: 1px solid transparent;
+  width: 80%;
+  font-family: 'poppins',sans-serif;
+}
